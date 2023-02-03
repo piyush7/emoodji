@@ -9,7 +9,7 @@ metadata:
 spec:
   source:
     git:
-      url: https://github.com/piyush7/emoodji
+      url: https://github.com/alexandreroman/emoodji
       ref:
         branch: main
   params:
@@ -20,3 +20,6 @@ spec:
     env:
     - name: BP_JVM_VERSION
       value: "17"
+    - name: BP_MAVEN_BUILD_ARGUMENTS
+      value: "-Dmaven.test.skip=true -X -e package"
+
